@@ -301,8 +301,9 @@ nav > ul {
 
 footer {
   margin-top: 30px;
-  background-color: #ddd;
-  padding: 20px;
+  background-color: rgb(48, 175, 207);
+  padding: 30px;
+  
 }
 
 footer > ul {
