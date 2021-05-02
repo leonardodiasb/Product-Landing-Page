@@ -8,29 +8,26 @@
 </head>
 <body>
     <header id="header">
+        <img src="micrologo.png" alt="microverse logo" height="75px">
         <img src="https://unsplash.com/photos/1zBPoVwS_Jo" alt="" id="header-img">
         <nav id="nav-bar">
-            <ul>
-                <li>
-                    <a class="nav-link" href="#video-section">Video</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#contacts">contact</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#form">Form</a>
-                </li>
-            </ul>
+            <a class="nav-link" href="#video-section">Video</a>
+            <a class="nav-link" href="#form">Form</a>
+            <a class="nav-link" href="#contacts">Contact</a>  
         </nav>
     </header>
         <section id="video-section">
+            <h1>THIS IS OUR EMPTY PRODUCT PAGE!</h1>
             <iframe type="" src="https://www.youtube.com/watch?v=mY4G9ujFxZE" id="video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p>this is the video of the product we don't have</p>
         </section>
 
         <form id="form" action=" https://www.freecodecamp.com/email-submit">
-            <input type="email" name="email" id="email" placeholder="write your email">
-
-            <input id="submit" type="submit" value="submit">
+            <p class="request-for-mercy">Please, leave your email in this space so we can be accepted by Microverse </p>
+            <div id="input-div">
+                <input type="email" name="email" id="email" placeholder="write your email">
+                <input id="submit" type="submit" value="submit">
+            </div>
         </form>
     <footer>
         <div id="contacts">
@@ -41,25 +38,64 @@
 
 </body>
 <style>
+    #contacts {
+        font-size: 18px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    form {
+        display: grid;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #input-div {
+        display: flex;
+        padding: 10px;
+    }
+    #email , #submit {
+        font-size: 20px;
+    }
+    .request-for-mercy {
+        font-size: 18px;
+        font-family: monospace;
+    }
+
     @media only screen and (max-width: 600px) {
       body {
         background-color: lightblue;
       }
     }
     section {
-        display: flex;
+        display: grid;
+        padding-top: 75px;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 35px;
     }
 
-    #navbar {
-      background-color: rgb(87, 206, 236);
+    #nav-bar {
+      display: inline-flex;
       right: 0;
       top: 0;
+      height: 10vh;
       width: 100vw;
       position: fixed;
       text-align: center;
-      font-size: 36px;
+      font-size: 24px;
+      align-items: center;
     }
-    
+    #nav-link {
+        color:black;
+    }
+    a {
+        text-decoration: none;
+        color: black
+    }
   </style>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
